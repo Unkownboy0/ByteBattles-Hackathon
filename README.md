@@ -6,7 +6,7 @@
 <br>
 <div align="center">
   
-![ByteBattles](https://raw.githubusercontent.com/Unkownboy0/ByteBattles-Hackathon/main/assets/preview.png "ByteBattles Website")
+![ByteBattles](https://github.com/Unkownboy0/ByteBattles-Hackathon/blob/main/BYTEBATTLES_web.png "ByteBattles Website")
 
 ![](https://komarev.com/ghpvc/?username=Unkownboy0&color=blueviolet&style=flat-square)
 
