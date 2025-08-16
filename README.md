@@ -56,7 +56,7 @@ Here are some things I’d like to add or refine:
 ---
 
 ## 🔗 Links  
-- 📂 Repo: [ByteBattles-Hackathon](https://github.com/Unkownboy0/ByteBattles-Hackathon)  
+- 📂 Repo: [ByteBattles-Hackathon](https://unkownboy0.github.io/ByteBattles-Hackathon/)  
 - 🌐 Live Demo: *Coming soon via GitHub Pages!*  
 
 ---
