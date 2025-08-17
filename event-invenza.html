@@ -60,11 +60,48 @@
 </style>
 </head>
   <div class="nloader">
-   |
-    |
-    |
-</div>
+    <svg class="nlder" viewBox="0 0 1200 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
 
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e5ff"/>
+      <stop offset="50%" stop-color="#7c4dff"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+      <animate attributeName="x1" values="0%;-100%" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="100%;0%" dur="3s" repeatCount="indefinite"/>
+    </linearGradient>
+  </defs>
+
+  <text id="btb"
+        x="50%" y="55%"
+        text-anchor="middle"
+        dominant-baseline="middle"
+        font-family="'Awery SmallCaps', sans-serif;"
+        font-size="50"
+        letter-spacing="5"
+        stroke="#ffffff"
+        stroke-width="3.5"
+        fill="transparent"
+        filter="url(#glow)">
+    ByteBattles_2K25
+    <animate attributeName="stroke-dasharray" from="1200" to="1200" dur="0s" fill="freeze"/>
+    <animate attributeName="stroke-dashoffset" from="1200" to="0" dur="2.2s" fill="freeze"/>
+    <animate attributeName="fill" values="transparent;url(#grad)" begin="0.9s" dur="0.9s" fill="freeze"/>
+  </text>
+
+  <!-- blinking cursor -->
+  <rect x="50%" y="60%" width="12" height="3" rx="1.5" fill="#ffffff">
+    <animate attributeName="opacity" values="0;0;1;1;0" dur="1s" begin="1.2s" repeatCount="indefinite"/>
+  </rect>
+</svg>
+    </div>
   <script>
 
     var loading_var = "What The Heck Are You Doing ?!";
