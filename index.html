@@ -406,13 +406,62 @@ burger()
 </section>
 
 <!-- Video Section -->
-<section class="intro-video-section" style="text-align:center; margin: 4vh 0;">
-  <h3>InTro Video</h3>
-  <video id="intro-video" width="80%" autoplay muted loop playsinline poster="video-poster.jpg" style="border-radius: 12px; box-shadow: 0 4px 24px #0003;">
+<section class="intro-video-section" 
+  style="text-align:center; margin: 4vh 0; padding:2vh 0; border-radius:16px; transition:background 0.3s;">
+  <h3 style="
+    font-family:'godofwar', 'Awery SmallCaps', sans-serif;
+    font-size:2em;
+    letter-spacing:2px;
+    margin-bottom:1vh;
+    color: var(--video-title-color, #fff94d);
+    text-shadow: 0 2px 8px #0002;
+    transition:color 0.3s;
+  ">
+    Intro Video
+  </h3>
+  <video id="intro-video"
+    width="80%"
+    autoplay
+    muted
+    loop
+    playsinline
+    poster="video-poster.jpg"
+    style="border-radius: 12px; box-shadow: 0 4px 24px #0003; outline: none;">
     <source src="inro video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
   </video>
-  <div style="font-family:'godofwar',sans-serif; font-size:1.5em; margin-top:1vh;">Welcome to ByteBattles 2K25</div>
+  <div class="video-caption"
+    style="
+      font-family:'godofwar', 'Awery SmallCaps', sans-serif;
+      font-size:1.5em;
+      margin-top:2vh;
+      letter-spacing:1px;
+      color: var(--video-caption-color, #222);
+      text-shadow: 0 2px 8px #0002;
+      transition:color 0.3s;
+    ">
+    Welcome to ByteBattles 2K25
+  </div>
 </section>
+<style>
+  /* Adaptive theme for video section */
+  body[data-theme="dark"] .intro-video-section {
+    background: linear-gradient(135deg, #181828 60%, #222 100%);
+  }
+  body[data-theme="light"] .intro-video-section {
+    background: linear-gradient(135deg, #f7f7ff 60%, #eaeaea 100%);
+  }
+  body[data-theme="dark"] .intro-video-section h3,
+  body[data-theme="dark"] .intro-video-section .video-caption {
+    --video-title-color: #00e5ff;
+    --video-caption-color: #fff;
+  }
+  body[data-theme="light"] .intro-video-section h3,
+  body[data-theme="light"] .intro-video-section .video-caption {
+    --video-title-color: #7c4dff;
+    --video-caption-color: #222;
+  }
+</style>
 
 <section id="Events">
   
